@@ -1,3 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
+using InventoryManagement;
 
-Console.WriteLine("Hello, World!");
+int opt = 1;
+while (opt != 0)
+{
+    Message.Show();
+    opt = Convert.ToInt32(Console.ReadLine());
+}
