@@ -6,8 +6,8 @@ public class Message
     {
         Console.Clear();
         Console.WriteLine("Welcome to the Inventory Management Console\n" +
-                          "1. Add a new item\n" +
-                          "2. Show all items\n" +
+                          "1. Add a new Product\n" +
+                          "2. Show all Product\n" +
                           "Type a option:");
     }
 }
