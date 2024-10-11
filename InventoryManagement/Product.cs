@@ -12,6 +12,7 @@ public class Product
     public int Quantity { get; set; }
     
     //constructor
+    
     public Product(string name, string category, float price, int quantity=0)
     {
         Name = name;
