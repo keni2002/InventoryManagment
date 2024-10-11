@@ -10,12 +10,15 @@ public class Product
     public string Name { get; set; }
     public  float Price { get; set; }
     public int Quantity { get; set; }
+    
+    //constructor
     public Product(string name, string category, float price, int quantity=0)
     {
         Name = name;
         Category = category;
         Price = price;
         Quantity = quantity;
+        
     }
 
 }
