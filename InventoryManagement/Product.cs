@@ -2,6 +2,7 @@
 
 public class Product
 {
+    
     public static readonly string[] Categories = new[]
     {
         "Food", "Clothes", "Entertainment", "Tools", "Technology"
@@ -20,6 +21,13 @@ public class Product
         Price = price;
         Quantity = quantity;
         
+    }
+    public static decimal CalcPriceIVA(decimal priceWithou, decimal rateIva,decimal amount, out decimal porcent)
+    {
+        porcent = amount*100/priceWithou;
+    
+        //apply IVA
+        return priceWithou * (1 + rateIva) - amount;
     }
 
 }

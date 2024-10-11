@@ -10,6 +10,7 @@ public class Message
                           "2. Show all Product\n" +
                           "3. Show products by category \n" +
                           "4. Calc Inventory Total Amount\n" +
+                          "5. Calc Price IVA\n"+
                           "0. Exit\n"+
                           "Type a option:");
     }
