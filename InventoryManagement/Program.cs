@@ -20,6 +20,14 @@ while (opt != 0)
             Console.Write("Product added. Press any key to continue...");
             Console.ReadLine();
             break;
+        case 3:
+            Console.Clear();
+            Show.ShowByCategory(products);
+            Console.Write("Product added. Press any key to continue...");
+            Console.ReadLine();
+            break;
+            
+            
         
     }
 }
