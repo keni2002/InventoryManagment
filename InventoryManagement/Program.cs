@@ -2,6 +2,13 @@
 using InventoryManagement;
 List<Product> products = new List<Product>();
 int opt = 1;
+
+
+
+
+
+
+
 while (opt != 0)
 {
     
@@ -37,9 +44,18 @@ while (opt != 0)
             Console.Write("Press any key to continue...");
             Console.ReadLine();
             break;
+        case 5:
+            Console.Clear();
+            Console.Write("Type a price: ");
+            decimal price = Convert.ToInt32(Console.ReadLine());
             
-            
-        
+            //INvocacion de un out muy util para volcar info en var page 131
+            decimal porcentuout;
+            Product.CalcPriceIVA(price, (decimal)0.21, 5, out porcentuout);
+            Console.WriteLine("Press any key to continue...");
+            Console.WriteLine(porcentuout);
+            Console.ReadLine();
+            break;
     }
 }
 
