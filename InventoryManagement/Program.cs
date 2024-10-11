@@ -17,13 +17,24 @@ while (opt != 0)
         case 2:
             Console.Clear();
             Show.ShowProducts(products);
-            Console.Write("Product added. Press any key to continue...");
+            Console.Write("Press any key to continue...");
             Console.ReadLine();
             break;
         case 3:
             Console.Clear();
             Show.ShowByCategory(products);
-            Console.Write("Product added. Press any key to continue...");
+            Console.Write("Press any key to continue...");
+            Console.ReadLine();
+            break;
+        case 4:
+            Console.Clear();
+            double amount = 0;
+            foreach (Product p in products)
+            {
+                amount += p.Price*p.Quantity;
+            }
+            Console.WriteLine($"Inventory total amount: ${Math.Round(amount,2)}");
+            Console.Write("Press any key to continue...");
             Console.ReadLine();
             break;
             
