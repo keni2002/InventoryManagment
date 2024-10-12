@@ -70,7 +70,7 @@ public class Functs
             //or
             int suma,difer;
             (suma,difer) = SumDiff(5, 3);
-            
+            //continue
 
     }
     //BUT the truly and good usage is in functions
